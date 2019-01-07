@@ -179,6 +179,14 @@ void FWrapperHelperTempateModule::LoadUserWidget()
 
 17. You may now write C++ functions within the blueprint function library and call them from your plugin's user widget!
 
+## Limitations
+
+1. Every time you recompile the User Widget, your window will go blank. This is due to the fact that the pointer to the slate module (wrapped by your widget) is no longer valid. In order to see changes, close the tab and open it again. The reason we don't auto-reload is answered below:
+
+2. This wrapper doesn't pass itself back to the user widget. This means the blueprint is unable to call functions associated with the C++ object (I feel that's a good thing). Because of this, the blueprint is not able to tell the wrapper plugin to reload the window (or call functions on it). This is the primary reason that we use a static blueprint function libary to handle all of our functions.
+
+3. Centered layouts that resize in UMG are quit difficult to create. The UMG of the example plugin has a layout that auto-centers with buttons and a title (regardless of window size).
+
 ## Authors
 
 * **Walker 'Nice Rain' Twyman**
