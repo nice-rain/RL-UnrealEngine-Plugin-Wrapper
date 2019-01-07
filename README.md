@@ -121,7 +121,7 @@ Note: It will most likely fail to compile the module with the editor open. This 
 void FWrapperHelperTempateModule::LoadUserWidget()
 {
 	//This path is contained within the WrapperHelperTemplate Content folder
-	UClass* LoadedWidget = LoadObject<UClass>(NULL, TEXT("/WrapperHelperTempate/BP_SlateWrapper.BP_SlateWrapper_C"), NULL, LOAD_None, NULL);
+	UClass* LoadedWidget = LoadObject<UClass>(NULL, TEXT("/YOUR_PLUGIN_NAME/BP_SlateWrapper.BP_SlateWrapper_C"), NULL, LOAD_None, NULL);
 	if (LoadedWidget)
 	{
 		//If successfully loaded, store it for later use.
@@ -131,6 +131,8 @@ void FWrapperHelperTempateModule::LoadUserWidget()
 ```
 
 :exclamation: Make sure to change FWrapperHelperTempateModule to your module's class name.
+
+:exclamation::exclamation: Make sure to change YOUR_PLUGIN_NAME in the path to successfully load the Blueprint.
 
 15. Rewrite OnSpawnPluginTab's definition to the following:
 
