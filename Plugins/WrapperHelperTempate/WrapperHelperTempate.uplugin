@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "WrapperHelperTempate",
+	"Description": "Plugin template used for wrapping UMG into plugins for UI development.",
+	"Category": "Rainy Labs",
+	"CreatedBy": "Rainy Labs, LLC",
+	"CreatedByURL": "https://nicera.in",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "WrapperHelperTempate",
+			"Type": "Developer",
+			"LoadingPhase": "Default"
+		}
+	]
+}
