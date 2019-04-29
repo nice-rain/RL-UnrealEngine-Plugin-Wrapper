@@ -1,4 +1,6 @@
-# Unreal Engine UW Plugin Wrapper
+# As of Unreal Engine 4.22, this feature is now included directly within the Unreal Engine Editor! This repository will be archived from this point forward.
+
+## Unreal Engine UW Plugin Wrapper
 
 In order to develop plugin (modules) for UE4's editor UI, you would need to use Slate to design and style the layout. Because Slate can be quite complex, Epic Games created User Widgets to wrap Slate into a blueprint for designing in-game UI elements. Functions may also be written in blueprints as well in a User Widget Blueprint. This template is a wrapper that loads a User Widget and then sets the slate component's content to the slate component wrapped in the user widget. It also includes a static blueprint library to allow editor function access within a blueprint widget as well (easiest way I found of handling this).
 
